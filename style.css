@@ -1,476 +1,576 @@
 *{
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: .2s linear;
 }
 
 body{
-  box-sizing: border-box;
-}
-
-
-/* HEADER */
-
-.header-main{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-}
-
-.container{
-        border: 1px solid white;
-        box-shadow: 10px 10px 5px rgb(134, 134, 134);
-}
-
-li,a{
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 13px;
-    color: #f1f1f1;
-}
-
-a:hover{
-  text-decoration: line-through;
-  color: rgb(250, 5, 168);
-}
-
-.menu-bar{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex-shrink: 1;
-    padding-left: 8px;
-    
-}
-
-.box {
-    height: 80%;
-    width: 50%;
-    position: absolute;
-    border-radius: 15px;
-  }
-  
-.left {
-    left: 20px;
-    background-color: rgb(1, 1, 1);
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-  }
-  
-.right {
-    right: 20px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    flex: 1;
-  }
-  
-  .name {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: hotpink;
-  }
-
-  .description{
-    font-family: 'Poiret One', cursive;
-    color: white;
-  }
-
-  
-
- .card {
-  display: grid;
-  grid-template-columns: 247px;
-  grid-template-rows: 246px 168px 127px;
-  grid-template-areas: "image" "textabout" "aboutme";
-
-  border-radius: 18px;
-  background: white;
-  /* box-shadow: 5px 5px 15px black; */
-  text-align: center;
-  /* background: transparent; */
-
-  transition: 0.4s ease;
-  cursor: pointer;
- }
-
- .card-image{
-  grid-area: image;
-  background: url(../Portfolio/images/pic.jpg);
-  border-radius: 50%;
-  background-size: cover;
-  border: 2px solid rgb(237, 229, 229);
-  
-
- }
-
- .card-textabout{
-  grid-area: textabout;
-  margin: 2px;
- }
-
- .card-textabout h3{
-  color: rgb(240,7,110);
-  border: 1px solid white;
-  border-radius: 12px;
-  font-family: 'Poiret One', cursive;
- }
-
- .card-aboutme{
-  grid-area: aboutme;
-  /* background: rgb(84, 3, 183); */
-  border-radius: 12px;
-  font-family: 'Poiret One', cursive;
-  color: rgb(255, 255, 255);
- }
-
- .card-aboutme .aboutme1{
-  color: rgb(0, 20, 23);
- }
-  
-
-.card:hover{
-  transform: scale(1.2);
-  box-shadow: 5px 5px 15px black;
-}
-
-
-h2{
-  display: flex;
-  justify-content: center;
-  justify-content: flex-start;
-  font-size: 8vh;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-span{
-  font-size: 8vh;
-  color: rgb(28, 172, 229);
-  text-shadow: 0 0 10px rgb(15, 71, 97);
-}
-
-
-  .hirebutton{
-    top: 20vh;
-    right: 70vw;
-    text-align: justify;
-    background-color:rgb(14, 201, 243);
-    color: hotpink;
-    font-family: 'Courier New', Courier, monospace;
-    box-shadow: 0 12px 16px 0 rgba(149, 9, 184, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    font-size: 17px;
-    font-family: 'Sigmar', cursive;
-    padding: 3%;
-  }
-
-  .cvbutton{
-    top: 20vh;
-    right: 63vw;
-    text-align: justify;
-    background-color:rgb(14, 201, 243);
-    color: hotpink;
-    font-family: 'Courier New', Courier, monospace;
-    box-shadow: 0 12px 16px 0 rgba(149, 9, 184, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    font-size: 17px;
-    font-family: 'Sigmar', cursive;
-    padding: 3%;
-  }
-
-
-
-
-
-
-
-
-
-
-  /* SKILL */
-
-.skill{
- 
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 0;
-}
-
-h1{
-  display: flex;
-  justify-content: center;
-  color: blueviolet;
-  position: relative;
-  bottom: -22px;
-  text-shadow: 0 15px 10px black;
-  font-family: 'Caveat', cursive;
-}
-
-
-  .icon-skill{
-    display: flex;
-    position: absolute;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: rgb(2, 25, 36);
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 3%;
-    top: 506px;
-  }
-  
-
-  .fa-brands{
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
-    padding: 1%;
+    background-repeat: no-repeat;
+}
 
-  }
-  
-
-
-
-  /* PROJECTS */
-
-  .container1{
+.logo{
+    width: 5%;
+    margin-left: 2%;
     position: absolute;
-    top: 100%;
-    margin: auto 10%;
-    /* background: rgb(240, 234, 234); */
+    left: 0;
 }
 
-.title-projects{
-  text-align: center;
-  font-family: 'Fredericka the Great', cursive;
-  margin-bottom: 5%;
-  color: rgb(95, 6, 62);
+
+.search-bar input{
+    border: 1px solid rgb(100, 92, 92);
+    padding: 5%;
+    border-radius: 12px;
+    width: 70%;
 }
 
-.box1{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 5%;
-    
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #FFF;
 }
 
-.project:hover{
-  transform: scale(1);
-  box-shadow: 5px 5px 15px black;
+p, blockquote{
+    font-size: .9em;
+    line-height: 1.6em;
 }
 
-.project{
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
     text-align: center;
-    /* background: rgba(255, 255, 255, .1);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
-    border: 2px solid rgb(255, 255, 255, .5);
-    border-right: 2px solid rgba(255, 255, 255, .2);
-    border-bottom: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(9px); */
-    padding-bottom: 8%;
-    border-radius: 12px;
-    overflow: hidden;
+    padding: .8em 1.2em;
+    
+    
 }
 
-.project img{
+.icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    /* padding-right: 83%; */
+}
+
+
+.hide-mobile{
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.menu{
+    width: 25px;
+    margin-top: 45%;
+}
+
+.server{
+    width: 50%;
+    margin: 2em auto 2em ;
+    border-radius: 50%;
+}
+
+h1, .subhead{
+    position: relative;
+    z-index: 3;
+    font-family: 'Dancing Script', cursive;
+    text-align: right;
+}
+
+.subhead{
+    font-size: 1.1em;
+}
+
+
+p{
+    font-size: large;
+}
+
+
+
+
+@keyframes slieder {
+    0%{  
+        background-image: url(./images/CK\ One\ Shock.jpg); 
+    }
+    35%{
+        background-image: url(./images/Aqua De Gio.jpg); 
+    }
+    75%{
+        background-image: url(./images/Bvlgari Extreme.jpg); 
+    }
+}
+
+
+.cart{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+.number-cart{
+    color: rgb(29, 3, 29);
+    font-size: 9px;
+}
+
+
+/* h2{
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 50px 50px #757676;
+} */
+
+
+
+
+
+
+/* BLUE CONTAINER */
+
+.blue{
+    margin: 10% auto;
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+
+h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+h5{
+    font-size: 11px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+.inner{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+}
+
+.boxes{
+    padding: 20px;
+    text-align: center;
+}
+
+.boxes img{
     object-fit: cover;
-    width: 100%;
-    padding: 2%;
-    padding-bottom: 5%;
-    
+    background-position: center;
+    width: 89%;
+    border-radius: 12px;
 }
 
-.project img:hover{
-  transform: scale(1.1);
-  
-  /* box-shadow: 5px 5px 15px black; */
+.blue .inner .boxes{
+    border-radius: 12px;
+    text-align: center;
+    padding: 40px 10px;
 }
 
-  
-  .container1 .box1{
+.inner .boxes h2{
+    color: #021b39;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+}
+
+.click{
     color: crimson;
-    justify-content: center;
-    position: relative;
-    font-family: 'Fredericka the Great', cursive;
-    color: gray;
-    align-items: center;
-  }
-  
-  
-  
-  .description1{
-      display: flex;
-      position: relative;
-      top: 9%;
-      font-family: 'Poiret One', cursive;
-      padding-bottom: 20%;
-  }
-  
-  
-  
-  .button-live{
-    position: relative;
-    top: 16%;
-    width: 50%;
-    padding: 1%;
-    border-radius: 12px;
-    border-color: white;
-    background-color: purple;
-    text-shadow: rgb(11, 11, 11) 0px 1px 2px;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    border-bottom: rgb(255, 254, 254);
-  }
-  
-  .button-code{
-    position: relative;
-    top: 16%;
-    width: 50%;
-    padding: 1%;
-    border-radius: 12px;
-    border-color: white;
-    background-color: purple;
-  }
+    background-color: #420a6b; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  font-family: 'Cinzel', serif;
+}
 
-  a:hover{
-    text-decoration: line-through;
-    color: rgb(250, 5, 168);
-  }
-
-  a{
-    text-shadow: rgb(11, 11, 11) 0px 1px 2px;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    border-bottom: rgb(255, 254, 254);
-    font-family: 'Fredericka the Great', cursive;
+.click a{
     text-decoration: none;
-}
-
-
-
-
-  /* FOOTER */
-
-  .Contactinfo-section{
-    display: flex;
-    width: 100%;
-    padding: 0;
-  }
-
-  .Email-contact{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: -578px;
-    background: black;
-    width: 100%;
-    padding: 0;
     color: white;
-    font-family: 'Poiret One', cursive;
+}
+
+.click a:hover{
+    color: black;
+}
+
+.click a:visited{
+    color: none;
+}
+
+
+.click:hover {
+    box-shadow: 0 12px 16px 0 rgba(221, 10, 221, 0.24),0 17px 50px 0 rgba(9, 188, 211, 0.19);
   }
 
-  .icons-footer{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 17%;
-  }
-
-
-   /* RESPONSIVE */
-
-  
-
-   @media only screen and (max-width: 590px) {
-    .Home-section{
-      width: 100%;
-    }
-
-    /* .container {
-        border: 1px solid rgb(254, 254, 254);
-        padding: 47%;
-        height: 169px;
-        background: black;
-        border-radius: 15px;
+@media (max-width:450px){
+    /* .inner {
+        display: grid;
+        grid-template-columns: 1fr;
+        background: red;
+        gap: 15px;
     } */
+}
 
-    .card {
-      display: grid;
-      grid-template-columns: 141px;
-      grid-template-rows: 160px 135px 190px;
-      grid-template-areas: "image" "textabout" "aboutme";
-    
-      border-radius: 18px;
-      background: white;
-      text-align: center;
-      background: transparent;
-    
-      transition: 0.4s ease;
-      cursor: pointer;
-     }
 
-    
 
-    .name {
-        position: absolute;
-        top: 49%;
-        left: 37%;
-        transform: translate(-50%, -50%);
-        color: hotpink;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GRAY CONTAINER */
+
+.gray-container{
+    background: #f6f6f6;
+    padding: 4em 0 2em;
+    margin-top: -3%;
+}
+
+.vern, .kid{
+    width: 50%;
+    border-radius: 50%;
+}
+
+figcaption {
+    font-weight: bold;
+    color: #00c2ff;
+}
+
+.cta{
+    background-color: purple;
+    width: calc(100% - 1em);
+    display: block;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 3% auto 7%;
+    position: relative;
+    z-index: 4;
+    font-family: 'Cinzel', serif;
+}
+
+.footer-container{
+    background: #00ffff;
+    color: #fff;
+    padding: 3em 0;
+    border-top-right-radius: 40px;
+    transform: skewY(2deg);
+}
+
+h3{
+    font-family: 'Zeyada', cursive;
+}
+
+.footer-container .container{
+    transform: skewY(-2deg);
+}
+
+.footer-container:before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #00ffff;
+    position: absolute;
+    top: -39px;
+    left: 0;
+    z-index: -2;
+}
+
+.footer-container:after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    position: absolute;
+    z-index: -1;
+    top: -80px;
+    left: 0;
+    border-radius: 50%;
+}
+
+nav ul{
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(36,41,44);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(49, 55, 59);
+}
+
+nav ul li a:hover{
+    background-color: rgb(0, 153, 255);
+}
+
+.exit-btn{
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+}
+.exit-btn i{
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 650px){
+
+    .server{
+        width: 20%;
+        float: left;
     }
 
-    li, a {
-        text-decoration: none;
+    h1{
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .subhead{
+        font-size: 1.4em;
+        margin-bottom: 12%;
+    }
+
+    .blue-container{
+        margin: 0;
+    }
+
+    .blue-container i.fa{
+        width: 20%;
+    }
+
+    .blue-container ul{
         display: flex;
-        flex-direction: row;
-        padding: 1px;
+        margin-top: -1em;
+        align-items: center;
+    }
+
+    .blue-container ul li{
+        margin-bottom: 0;
+    }
+
+    .blue-container ul li p{
+        padding: 0.8em;
+    }
+
+    .gray-container ul{
+        display: flex;
+    }
+
+    nav ul{
+        width: 40%;
+    }
+
     
-  }
 
-  h2 {
+}
+
+@media only screen and (min-width: 875px){
+
+    .subhead{
+        margin-bottom: 15%;
+    }
+
+    .blue-container ul{
+        margin: 0 0 4% 0;
+    }
+
+    .gray-container ul{
+        margin: 4% 0 0;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+        .cta{
+            width: 50%;
+        }
+        .container{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* .icon{
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 10px;
+            padding-right: 90%;
+        
+        } */
+
+        .show-desktop{
+            display: block;
+            margin: 0 auto 13% auto;
+        }
+
+        .hide-desktop{
+            display: none;
+        }
+
+        nav ul{
+            position: inherit;
+            width: auto;
+            background: none;
+            height: auto;
+            display: flex;
+            padding-top: 0;
+        }
+
+        nav ul li{
+            float: left;
+        }
+
+        nav ul li a{
+            color: black;
+            background-color: inherit;
+            text-align: right;
+            padding: 1em 2em;
+        }
+
+        nav ul li a:hover{
+            background-color: inherit;
+        }
+
+        
+}
+
+/* CART PAGE */
+
+.products-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+
+
+
+.products-container fa-solid {
+    font-size: 25px;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
     display: flex;
-    justify-content: center;
     justify-content: flex-start;
-    font-size: 6vh;
-    margin-bottom: 0px;
-    margin-top: 147px;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
 }
-   }
 
-   .card{
-    grid-template-columns: 206px;
-    grid-template-rows: 210px 194px 114px;
-   }
+ .product-title{
+    width: 45%;
+}
 
 
-   
-   
-   @media only screen and (max-width: 500px) {
-   
-  
-   .container1 .box1{
+.price {
+    width: 15%;
+    display: flex;
     align-items: center;
-   }
-   
-    .box1{
-      grid-template-columns: 355px;
-   }
-
-   .card{
-    grid-template-columns: 141px;
-    grid-template-rows: 130px 135px 190px;
-   }
-
-   .box{
-    width: 42%;
-   }
-  }
-
-  @media only screen and (min-width: 750px) {
-.card{
-  grid-template-columns: 183px;
-  grid-template-rows: 191px 199px 127px;
 }
-  }
+
+.quantity{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+
+.total{
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.product fa-solid{
+    cursor: pointer;
+}
+
+.products
+{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.baketTotalTitle {
+    width: 30%;
+}
+
+
+.basketTotal {
+    width: 10%;
+}
+
+
+
+
